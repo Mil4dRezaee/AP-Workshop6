@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" modified="2024-12-30T12:00:00.000Z" agent="Mozilla/5.0" version="21.1.1" type="device">
+  <diagram id="animal-hierarchy-diagram" name="Animal Hierarchy">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#1A1A1A" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Main Class -->
+        <mxCell id="main-class" value="Main" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#6c8ebf;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Animal Class -->
+        <mxCell id="animal-class" value="Animal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#6c8ebf;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Bird Class -->
+        <mxCell id="bird-class" value="Bird" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#6c8ebf;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Mammal Class -->
+        <mxCell id="mammal-class" value="Mammal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#6c8ebf;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Hunter Class -->
+        <mxCell id="hunter-class" value="Hunter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#82b366;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="120" y="400" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Prey Class -->
+        <mxCell id="prey-class" value="Prey" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#82b366;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Eagle Class -->
+        <mxCell id="eagle-class" value="Eagle" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#6c8ebf;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="120" y="520" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Cheetah Class -->
+        <mxCell id="cheetah-class" value="Cheetah" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#6c8ebf;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="360" y="520" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Parrot Class -->
+        <mxCell id="parrot-class" value="Parrot" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#6c8ebf;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="480" y="520" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Giraffe Class -->
+        <mxCell id="giraffe-class" value="Giraffe" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#383838;strokeColor=#6c8ebf;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="600" y="520" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Inheritance Connections -->
+        <mxCell id="conn-main-animal" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="animal-class" target="main-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="conn-bird-animal" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="bird-class" target="animal-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="conn-mammal-animal" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="mammal-class" target="animal-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Hunter and Prey Implementation Connections -->
+        <mxCell id="impl-eagle-hunter" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#82b366;dashed=1;" edge="1" parent="1" source="eagle-class" target="hunter-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="impl-cheetah-hunter" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#82b366;dashed=1;" edge="1" parent="1" source="cheetah-class" target="hunter-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="impl-parrot-prey" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#82b366;dashed=1;" edge="1" parent="1" source="parrot-class" target="prey-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="impl-giraffe-prey" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#82b366;dashed=1;" edge="1" parent="1" source="giraffe-class" target="prey-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Class Inheritance Lines -->
+        <mxCell id="inherit-eagle-bird" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="eagle-class" target="bird-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="inherit-parrot-bird" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="parrot-class" target="bird-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="inherit-cheetah-mammal" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="cheetah-class" target="mammal-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="inherit-giraffe-mammal" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="giraffe-class" target="mammal-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
